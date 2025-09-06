@@ -1,0 +1,278 @@
+.mywork {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin: 80px 90px;
+}
+
+.mywork-title {
+  position: relative;
+}
+
+.mywork-title h1 {
+  padding: 0px 30px;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.mywork-title img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  width: 60%;
+}
+
+/* Layout */
+.mywork-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+/* Project Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  flex: 1;
+  max-width: 750px;
+}
+
+.single-project {
+  background: #a9b4f5;
+  border-radius: 1rem;
+  padding: 1.2rem;
+  box-shadow: 0 6px 12px rgba(2, 50, 59, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.single-project img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: .8rem;
+  margin-bottom: 1rem;
+}
+
+.single-project p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.single-project:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(191, 68, 2, 0.699);
+}
+
+/* Experience Area */
+.experience-area {
+  background: #fdfdfd;
+  border-radius: 1.2rem;
+  padding: 2rem;
+  text-align: left;
+  min-width: 280px;
+  max-height: 300px;
+  flex-shrink: 0;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.years-area {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.years {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #6c2bd9;
+}
+
+.years-area h2 span {
+  display: block;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.call-area {
+  margin-top: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.call-area span i {
+  color: #6c2bd9;
+}
+
+.call-now a {
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #222;
+}
+
+.call-now span {
+  display: block;
+  margin-top: .3rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.bg-panel {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #f7f4ff, #fdfdfd);
+  border-radius: 1.2rem;
+  z-index: -1;
+}
+
+
+
+/* Responsive Design */
+
+/* Tablet view (<=1024px) */
+@media (max-width: 1024px) {
+  .mywork {
+    margin: 50px 40px;
+    gap: 60px;
+  }
+
+  .mywork-title h1 {
+    font-size: 40px;
+  }
+
+  .projects-grid {
+    max-width: 100%;
+    gap: 1.5rem;
+  }
+
+  .experience-area {
+    max-height: none;
+    min-width: 240px;
+  }
+
+  .years {
+    font-size: 2.5rem;
+  }
+}
+
+/* Mobile view (<=768px) */
+@media (max-width: 768px) {
+  .mywork {
+    margin: 40px 20px;
+    gap: 40px;
+  }
+
+  .mywork-title h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .mywork-title img {
+    width: 50%;
+    right: 10px;
+  }
+
+  .mywork-area {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+    max-width: 100%;
+  }
+
+  .single-project {
+    padding: 1rem;
+  }
+
+  .single-project img {
+    height: 120px;
+  }
+
+  .single-project p {
+    font-size: 1rem;
+  }
+
+  .experience-area {
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .years {
+    font-size: 2rem;
+  }
+}
+
+/* Small mobile view (<=480px) */
+@media (max-width: 480px) {
+  .mywork {
+    margin: 20px 15px;
+    gap: 30px;
+  }
+
+  .mywork-title h1 {
+    font-size: 24px;
+  }
+
+  .mywork-title img {
+    width: 40%;
+    right: 5px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .single-project img {
+    height: 100px;
+  }
+
+  .single-project p {
+    font-size: 0.9rem;
+  }
+
+  .experience-area {
+    padding: 0rem;
+    min-width: auto;
+  }
+
+  .years-area{
+    padding: 23px !important;
+  }
+
+  .call-now{
+    margin-bottom: 22px;
+    margin-right: 10px;
+  }
+
+  .years {
+    font-size: 1.8rem;
+  }
+
+  .call-now a {
+    font-size: 0.9rem;
+  }
+
+  .call-now span {
+    font-size: 0.8rem;
+  }
+}
+
+  
+
+
+

@@ -1,0 +1,342 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 90px;;
+    
+}
+
+.about-title {
+    position: relative;
+}
+
+.about-title h1 {
+    padding: 0px 30px;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.about-title img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    width: 60%;
+}
+
+.about-sections {
+    display: flex;
+    gap: 70px;
+    
+}
+
+.about-left img {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 1.1);
+} 
+
+.about-right {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* font-size: 24px;
+    font-weight: 500; */
+}
+
+.about-para{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.about-para p {
+  font-weight: 300;
+  font-size: 20px;
+  /* line-height: 1.6;
+  margin-bottom: 25px; */
+}
+
+.about-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  
+}
+
+
+.about-skill {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  transition: 0.3s;
+}
+
+.about-skill:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.about-skill p {
+  min-width: 150px;
+  font-weight: 500;
+  font-size: 24px;
+  
+}
+
+.about-skill hr {
+    outline: none;
+    font-weight: 50%;
+  height: 5px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 100%);
+  /* flex-grow: 1; */
+  transition: width 1s ease-in-out;
+}
+
+
+.about-achievements {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 80px;
+  
+}
+
+.about-achievement {
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    transition: 0.5s;
+    align-items: center;
+    gap :10px;
+
+}
+
+.about-achievement h1 {
+  font-size: 50px;
+  font-weight: 700;
+  background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.about-achievement p {
+    font-size: 22px;
+    font-weight: 200;
+  /* color: #555; */
+}
+
+.about-achievement:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about {
+    padding: 40px 20px;
+  }
+
+  .about-sections {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-left img {
+    width: 100%;
+    max-width: 300px;
+  }
+    .about-right {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* About Info List Styling */
+.about-info {
+  list-style: none; /* Remove default bullets */
+  padding: 0;
+  margin: 0;
+  max-width: 500px; /* Optional: width constraint */
+}
+
+.about-info li {
+  display: flex;
+  justify-content: space-between; /* Name vs Value on opposite sides */
+  padding: 10px 15px;
+  border-bottom: 1px solid #e0e0e0; /* Light separator line */
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+.about-info li:last-child {
+  border-bottom: none; /* Remove last border */
+}
+
+.about-info li span:first-child {
+  font-weight: 600; /* Make labels bold */
+  color: #555;
+}
+
+.about-info li span:last-child {
+  font-weight: 400;
+  color: #64049f;
+}
+
+/* Optional: hover effect */
+.about-info li:hover {
+  background-color: #f9f9f9;
+  transition: background-color 0.3s;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 480px) {
+  .about-info li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-info li span:last-child {
+    margin-top: 5px;
+  }
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .about {
+    margin: 40px 30px;
+    gap: 50px;
+  }
+
+  .about-title h1 {
+    font-size: 36px;
+  }
+
+  .about-sections {
+    gap: 40px;
+  }
+
+  .about-skill p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    margin: 30px 20px;
+    gap: 40px;
+  }
+
+  .about-title h1 {
+    font-size: 30px;
+  }
+
+  .about-sections {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .about-left img {
+    width: 90%;
+    max-width: 280px;
+  }
+
+  .about-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-para {
+    font-size: 18px;
+  }
+
+  .about-skill p {
+    font-size: 18px;
+    min-width: 100px;
+  }
+
+  .about-achievements {
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .about-achievement h1 {
+    font-size: 36px;
+  }
+
+  .about-achievement p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    margin: 20px 15px;
+    gap: 30px;
+  }
+
+  .about-title h1 {
+    font-size: 24px;
+  }
+
+  .about-left img {
+    width: 100%;
+    max-width: 240px;
+  }
+
+  .about-para {
+    font-size: 16px;
+    gap: 15px;
+  }
+
+  .about-para p {
+    font-size: 14px;
+  }
+
+  .about-skill {
+    gap: 20px;
+  }
+
+  .about-skill p {
+    font-size: 16px;
+    min-width: auto;
+  }
+
+  .about-achievement h1 {
+    font-size: 28px;
+  }
+
+  .about-achievement p {
+    font-size: 14px;
+  }
+
+  .about-info li {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+}
+
+
+

@@ -1,0 +1,156 @@
+.footer {
+  background: #6340a0; /* purple */
+  color: #fff;
+  text-align: center;
+  padding-top: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Wave container */
+.footer-waves {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  margin-bottom: -5px;
+  overflow: hidden;
+}
+
+.footer-waves .wave {
+  position: absolute;
+  width: 200%; /* extra width for animation */
+  height: 120px;
+  bottom: 0;
+  left: 0;
+  animation: waveMove 12s linear infinite;
+}
+
+.footer-waves .wave:nth-child(2) {
+  animation-delay: -6s; /* second wave offset */
+  opacity: 0.6;
+}
+.footer-waves .wave:nth-child(3) {
+  animation-delay: -3s; /* third wave offset */
+  opacity: 0.4;
+}
+
+/* Wave Animation */
+@keyframes waveMove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Socials */
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 1.8rem;
+  margin: 20px 0;
+}
+
+.footer-socials a {
+  color: #fff;
+  transition: 0.3s;
+}
+
+/* Individual icon hover colors */
+.footer-socials a:hover svg {
+  transform: scale(1.2);
+}
+
+.footer-socials a[href*="facebook"]:hover {
+  color: #1877f2;
+}
+
+.footer-socials a[href*="twitter"]:hover {
+  color: #1da1f2;
+}
+
+.footer-socials a[href*="linkedin"]:hover {
+  color: #0077b5;
+}
+
+.footer-socials a[href*="instagram"]:hover {
+  color: #e4405f;
+}
+
+.footer-socials a[href*="whatsapp"]:hover {
+  color: #25d366;
+}
+
+.footer-socials a[href*="github"]:hover {
+  color: #333;
+}
+
+/* Links */
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #00acee;
+}
+
+/* Bottom */
+.footer-bottom {
+  font-size: 0.8rem;
+  color: #bbb;
+  padding-bottom: 10px;
+}
+
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.footer-waves .wave {
+  position: absolute;
+  width: 200%;
+  height: 120px;
+  bottom: 0;
+  left: 0;
+  animation: waveMove 12s linear infinite;
+}
+
+.footer-waves .wave:nth-child(2) {
+  animation-delay: -6s;
+  opacity: 0.6;
+}
+
+@keyframes waveMove {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* .footer-socials a[href*="facebook"]:hover { color: #1877f2; }
+.footer-socials a[href*="twitter"]:hover { color: #1da1f2; } */
+.footer-socials a[href*="linkedin"]:hover { color: #0077b5; }
+.footer-socials a[href*="instagram"]:hover { color: #e4405f; }
+.footer-socials a[href*="whatsapp"]:hover { color: #25d366; }
+.footer-socials a[href*="github"]:hover { color: #333; }
